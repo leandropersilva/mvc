@@ -15,7 +15,6 @@ if (count($url) > 1) {
     if (file_exists($file)) {
         require_once $file;
         $class = new $controller();
-
         if (method_exists($class, $method)) {
             $class->$method(array_merge($routeParams, $getParams));
         } else {
