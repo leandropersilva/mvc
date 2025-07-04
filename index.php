@@ -20,10 +20,10 @@ if (count($url) > 1) {
             $class->$method(array_merge($routeParams, $getParams));
         } else {
             http_response_code(404);
-            include 'src/views/404/method404.php';
+            include 'src/view/404/method404.php';
         }
     } else {
         http_response_code(404);
-        include 'src/views/404/controller404.php';
+        include 'src/view/404/controller404.php';
     }
 }
